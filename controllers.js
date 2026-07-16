@@ -1,11 +1,11 @@
+const express = require("express");
 
+const helloguys = require("../services/authServices.js");
 
-// controllers/userController.js
-
-exports.getUsers = (req, res) => {
-    res.send("All Users");
+const hello = (req, res) => {
+  const data = helloguys();
+  res.send(data);
 };
 
-exports.createUser = (req, res) => {
-    res.send("User Created");
-};
+
+module.exports = hello;
