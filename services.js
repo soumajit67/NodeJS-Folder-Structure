@@ -1,4 +1,4 @@
-const users = require("../data/users.js");
+const users = require("users.js");
 const {
     hashedPassword
 } = require("../utils/hash.util.js");
